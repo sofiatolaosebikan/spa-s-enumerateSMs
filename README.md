@@ -2,7 +2,6 @@
 An implementation that finds all the stable matchings in a given instance of the Student-Project Allocation problem with student preferences over projects and lecturer preferences over students (SPA-S).
 
 Input => a SPA-S instance represented as a .txt file
-
 Outut => all stable matchings that the instance admits 
 
 An example of a SPA-S instance is represented in input2.txt, which admits two stable matchings.
