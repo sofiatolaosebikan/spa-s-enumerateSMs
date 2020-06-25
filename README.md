@@ -12,9 +12,9 @@ Let n1 =  number of students, n2 = number of projects, and n3 = number of lectur
 
 n1 n2 n3
 
-student1 <preferences over projects>
+student1 preferences_over_projects
   
-student2 <preferences over projects>
+student2 preferences_over_projects
   
 .		      .
 
@@ -22,7 +22,7 @@ student2 <preferences over projects>
 
 .		      .
 
-studentn1 <preferences over projects>
+studentn1 preferences_over_projects
   
 project1 capacity lecturer
 
@@ -36,9 +36,9 @@ project2 capacity lecturer
 
 projectn2 capacity lecturer
 
-lecturer1 capacity <preferences over students>
+lecturer1 capacity preferences_over_students
   
-lecturer2 capacity <preferences over students>
+lecturer2 capacity preferences_over_students
   
 .             .           .
 
@@ -46,7 +46,7 @@ lecturer2 capacity <preferences over students>
 
 .             .           .
 
-lecturern3 capacity <preferences over students>
+lecturern3 capacity preferences_over_students
   
 
 
