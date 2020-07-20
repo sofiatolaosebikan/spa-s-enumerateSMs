@@ -5,7 +5,7 @@ Input => a SPA-S instance represented as a .txt file
 
 Outut => all stable matchings that the instance admits 
 
-An example of a SPA-S instance is represented in input2.txt, which admits two stable matchings.
+An example of a SPA-S instance is represented in input2.txt, which admits two stable matchings. See examples.ipynb for an illustration of how to find these stable matchings using my implementation.
 
 # How to read the txt file
 Let n1 =  number of students, n2 = number of projects, and n3 = number of lecturers. The .txt file can be read as follows:
