@@ -6,14 +6,14 @@
 
 class SPAS:
     def __init__(self):
-        self.students = 0
-        self.projects = 0
-        self.lecturers = 0  
-        self.sp = {}
-        self.plc = {}
-        self.lp = {}
-        self.lp_rank = {}
-        self.proj_rank = {}
+        self.students = 0       # keeps track of number of students
+        self.projects = 0       # keeps track of number of projects
+        self.lecturers = 0      # keeps track of number of lecturers
+        self.sp = dict()        # {student: [ordered_preference_list, dictionary pointing each project to its rank]}
+        self.plc = dict()       # {project: [lecturer, project_capacity]}
+        self.lp = dict()        # {lecturer; [lecturer_capacity, ordered_preference_list_Lk, dictionary pointing each project to Lkj]}
+        self.lp_rank = dict()   # {lecturer: a dictionary pointing each student to her rank in Lk}
+        self.proj_rank = dict() # {project: a dictionary pointing each student to her rank in Lkj}
 
     def read_file(self, filename):  # reads the SPA instance
         """
@@ -23,7 +23,7 @@ class SPAS:
             
             self.plc = {'p1': ['l1', 1], 'p2': ['l1', 1], 'p3': ['l2', 1], 'p4': ['l2', 1]}
             
-            self.plc = {'l1': [2, ['s3', 's1', 's2', 's4'], {'p1': ['s3', 's1', 's4'], 'p2': ['s1', 's2']}], 'l2': [2, ['s2', 's4', 's3'], {'p3': ['s2', 's3'], 'p4': ['s4']}]}
+            self.lp = {'l1': [2, ['s3', 's1', 's2', 's4'], {'p1': ['s3', 's1', 's4'], 'p2': ['s1', 's2']}], 'l2': [2, ['s2', 's4', 's3'], {'p3': ['s2', 's3'], 'p4': ['s4']}]}
             
             self.lp_rank = {'l1': {'s3': 0, 's1': 1, 's2': 2, 's4': 3}, 'l2': {'s2': 0, 's4': 1, 's3': 2}}
             
